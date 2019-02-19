@@ -16,7 +16,9 @@
   - 公開されているデータを使う
     - [普通の人のためのデータ分析（4） 最新の貿易統計を取得して、CSVにする](https://qiita.com/zanjibar/items/53c90bd076d4deb2ceea)
   - ユーザー権限他設定等
-
+- UML
+  - 汚いので何とかしたい
+  - [打倒！PlantUMLのなにこれレイアウト – VELTRA Engineering – Medium](https://medium.com/veltra-engineering/how-difficult-it-is-to-adjust-the-layout-using-plantuml-997884410db5)
 ## Categories
 
 - [BI](#BI)
