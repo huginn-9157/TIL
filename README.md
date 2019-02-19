@@ -28,5 +28,5 @@
   - [忘備録](./BI/MotionBoard/tips.md)
 - Dr.Sum
   - [概要とインストール](./BI/Dr.Sum/Install.md)
-  - [Dr.Sumで業務分析](./BI/Dr.Sum/Analisys.md)
-  - [忘備録](./BI/Dr.Sum/Datalizer.md)
+  - [Dr.Sumで業務分析](./BI/Dr.Sum/Analysis.md)
+  - [忘備録](./BI/Dr.Sum/tips.md)
