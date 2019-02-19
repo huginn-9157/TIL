@@ -6,7 +6,6 @@
   - [ポート](#%E3%83%9D%E3%83%BC%E3%83%88)
   - [ログインの確認](#%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E7%A2%BA%E8%AA%8D)
   - [ドライバーZIPファイルの作成](#%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90%E3%83%BCzip%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E4%BD%9C%E6%88%90)
-  - [データソース](#%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BD%E3%83%BC%E3%82%B9)
 
 ## 使うもの
 
@@ -83,7 +82,3 @@ http://<Webサーバーの名前またはIPアドレス>:8787/motionboard/
     ```
     driver create D:\TEMP\MotionBoard_5.7_win_warp\EXTRAS\mariadb.zip "C:\Users\user\lib\mariadb-java-client-2.2.6.jar" "C:\MotionBoard57\system\resources\communicator\drivers\extra"
     ```
-
-## データソース
-
-設定上での`データソース`はDBの種類等（もしくはExcelやその他）を指すが、ボード上でのデータソースはDBのテーブルを指す

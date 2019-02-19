@@ -25,6 +25,7 @@
 - MotionBoard
   - [概要とインストール](./BI/MotionBoard/Install.md)
   - [guiflowで画面遷移図](./BI/MotionBoard/guiflow.md)
+  - [ボタンアクション](./BI/MotionBOard/buttonAction.md)
   - [忘備録](./BI/MotionBoard/tips.md)
 - Dr.Sum
   - [概要とインストール](./BI/Dr.Sum/Install.md)
