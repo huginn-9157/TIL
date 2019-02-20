@@ -9,7 +9,6 @@
 - Python
   - チュートリアル
     - [独学プログラマー Python言語の基本から仕事のやり方まで](https://honto.jp/ebook/pd_28990263.html)
-    - [Progate](https://prog-8.com/)
   - データ取得まで
 - BI
   - [公式のtips](http://navi.wingarc.com/motionboard/)で使いそうなものをやる
@@ -31,7 +30,7 @@
 - MotionBoard
   - [概要とインストール](./BI/MotionBoard/Install.md)
   - [guiflowで画面遷移図](./BI/MotionBoard/guiflow.md)
-  - [ボタンアクション](./BI/MotionBOard/buttonAction.md)
+  - [ボタンアクション](./BI/MotionBoard/buttonAction.md)
   - [忘備録](./BI/MotionBoard/tips.md)
 - Dr.Sum
   - [概要とインストール](./BI/Dr.Sum/Install.md)
@@ -42,3 +41,4 @@
 
 - DB設計
   - [販売管理](./DB/販売管理.md)
+    - [マスタ設計](./DB/販売管理_マスタ.md)

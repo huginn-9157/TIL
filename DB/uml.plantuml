@@ -1,0 +1,118 @@
+@startuml
+
+actor 顧客
+actor 仕入れ先
+
+rectangle 営業部門 {
+  usecase 見積入力
+  usecase 受注入力
+  usecase 出荷指示
+  database 見積データ
+  database 受注データ
+  database 出荷指示データ
+  file 見積書
+  file 注文請書
+  file 出荷指示書
+
+  顧客 -do--> 見積入力: 見積依頼
+  見積入力 -do-> 見積データ
+  見積データ -ri..> 受注データ
+  顧客 -do--> 受注入力: 注文書
+  受注入力 -do-> 受注データ
+  受注データ -ri..> 出荷指示データ
+
+  出荷指示 -do-> 出荷指示データ
+  見積データ -do-> 見積書
+  受注データ -do-> 注文請書
+  出荷指示データ -do-> 出荷指示書
+  出荷指示書 ..> 倉庫
+}
+
+rectangle 調達部門 {
+  usecase 発注入力
+  database 発注データ
+  file 注文書
+
+  受注入力 -> 発注入力
+  発注入力 -do-> 発注データ
+  発注データ -do-> 注文書
+  注文書 -do-> 仕入れ先 :注文書送付
+}
+
+rectangle 倉庫 {
+  usecase 出荷入力
+  usecase 入荷入力
+  usecase 検品
+  database 出荷データ
+  database 在庫データ
+  database 入荷データ
+  file 納品書
+  file 入荷伝票
+
+  出荷入力 -do-> 出荷データ
+  出荷指示データ ..> 出荷データ
+  出荷データ -do-> 納品書
+  出荷入力 --> 在庫データ
+  入荷入力 --> 出荷指示
+  入荷入力 --> 在庫データ
+  入荷入力 -do-> 入荷データ
+  入荷データ -do-> 入荷伝票
+
+  検品 -up---> 入荷入力
+  仕入れ先 -up--> 検品
+}
+
+rectangle 営業部門 {
+  usecase 売上入力
+  database 売上データ
+  file 売上伝票
+
+  出荷データ -...> 売上データ
+  売上入力 -do-> 売上データ
+  売上データ -do-> 売上伝票
+}
+
+rectangle 調達部門 {
+  usecase 仕入入力
+  database 仕入データ
+  file 仕入伝票
+
+  仕入入力 -do-> 仕入データ
+  入荷データ ..> 仕入データ
+  仕入データ -do-> 仕入伝票
+}
+
+rectangle 経理部門 {
+  usecase 請求締処理
+  usecase 支払締処理
+  database 債権データ
+  database 債務データ
+  file 請求書
+  file 支払書
+
+  請求締処理 -do-> 債権データ
+  売上データ ..> 債権データ
+  債権データ -do-> 請求書
+  支払締処理 -do-> 債務データ
+  仕入データ ..>債務データ
+  債務データ -do-> 支払書
+  支払書 --> 仕入れ先 :支払書送付
+}
+
+rectangle 財務部門 {
+  usecase 入金入力
+  usecase 支払入力
+  database 入金データ
+  database 支払データ
+  file 入金伝票
+  file 支払伝票
+
+  入金入力 -do-> 入金データ
+  債権データ ..> 入金データ
+  入金データ -do-> 入金伝票
+  支払入力 -do-> 支払データ
+  債務データ ..> 支払データ
+  支払データ -do-> 支払伝票
+}
+
+@enduml
