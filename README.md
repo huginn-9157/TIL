@@ -12,8 +12,7 @@
   - データ取得まで
 - BI
   - [公式のtips](http://navi.wingarc.com/motionboard/)で使いそうなものをやる
-  - 公開されているデータを使う
-    - [普通の人のためのデータ分析（4） 最新の貿易統計を取得して、CSVにする](https://qiita.com/zanjibar/items/53c90bd076d4deb2ceea)
+  - tableauのサンプルで遊ぶ[https://public.tableau.com/s/resources?build=20183.18.1219.1533&edition=public&lang=ja-jp&platform=windows&version=2018.3]
   - ユーザー権限他設定等
 - UML
   - 汚いので何とかしたい
