@@ -5,7 +5,6 @@
 ## Plans
 
 - DB
-  - データベース設計（販売管理）
 - Python
   - チュートリアル
     - [独学プログラマー Python言語の基本から仕事のやり方まで](https://honto.jp/ebook/pd_28990263.html)
@@ -21,6 +20,9 @@
     - なんともなりませんでした
     - 方向指示語でコントロール可能な大きさになるよう、機能ごとに分割するしかない
   - [打倒！PlantUMLのなにこれレイアウト – VELTRA Engineering – Medium](https://medium.com/veltra-engineering/how-difficult-it-is-to-adjust-the-layout-using-plantuml-997884410db5)
+- Linux
+  - LinuCに向けて
+    - とりあえず、[LinuCイージス](https://www.infraeye.com/study/studyz4.html)でざっと確認
 
 ## Categories
 
