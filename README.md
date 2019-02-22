@@ -57,3 +57,4 @@
 ### Python
 
 - [制御文](./Python/loop.md)
+- [配列](./Python/array.md)
