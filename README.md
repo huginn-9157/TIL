@@ -32,6 +32,7 @@
     - [BI](#bi)
     - [DB](#db)
     - [Python](#python)
+    - [Linux](#linux)
 
 ### BI
 
@@ -59,3 +60,8 @@
 - [制御文](./Python/loop.md)
 - [配列](./Python/array.md)
 - [モジュール](./Python/module.md)
+- [入出力](./Python/stdinout.md)
+
+### Linux
+
+- [dockerでCentOS](./Linux/cent01.md)
