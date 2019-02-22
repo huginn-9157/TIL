@@ -64,4 +64,4 @@
 
 ### Linux
 
-- [dockerでCentOS](./Linux/cent01.md)
+- [dockerでCentOS](./Linux/centos01.md)
