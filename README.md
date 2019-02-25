@@ -65,3 +65,4 @@
 ### Linux
 
 - [dockerでCentOS](./Linux/centos01.md)
+- [テキスト処理](./Linux/centos02.md)
