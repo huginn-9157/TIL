@@ -65,4 +65,6 @@
 ### Linux
 
 - [dockerでCentOS](./Linux/centos01.md)
-- [テキスト処理](./Linux/centos02.md)
+- [基本コマンド：ファイル](./Linux/centos02.md)
+- [基本コマンド：プロセス](./Linux/centos03.md)
+  
