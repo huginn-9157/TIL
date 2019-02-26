@@ -67,3 +67,4 @@
 - [dockerでCentOS](./Linux/centos01.md)
 - [基本コマンド：ファイル](./Linux/centos02.md)
 - [基本コマンド：プロセス](./Linux/centos03.md)
+- [ファイルシステム、パーミッション](./Linux/centos04.md)
