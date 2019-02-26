@@ -2,6 +2,14 @@
 
 >Today I Learned
 
+- [TIL](#til)
+  - [Plans](#plans)
+  - [Categories](#categories)
+    - [BI](#bi)
+    - [DB](#db)
+    - [Python](#python)
+    - [Linux](#linux)
+
 ## Plans
 
 - DB
@@ -13,6 +21,13 @@
   - データ取得まで
 - BI
   - [公式のtips](http://navi.wingarc.com/motionboard/)で使いそうなものをやる
+    - [x] 主たる分析チャート表示
+    - [x] ボタンによるチャート連動
+    - [x] チャートクリックでのドリルダウン
+    - [ ] MBでピボットテーブルライクな自由集計
+    - コンテナ利用
+      - [ ] 検索条件をポップアップ表示
+      - [ ] チャートのアニメーション
   - ~~[tableauのサンプル](https://public.tableau.com/s/resources?build=20183.18.1219.1533&edition=public&lang=ja-jp&platform=windows&version=2018.3)で遊ぶ~~
 - UML
   - ~~汚いので何とかしたい~~
@@ -24,14 +39,6 @@
     - とりあえず、[LinuCイージス](https://www.infraeye.com/study/studyz4.html)でざっと確認
 
 ## Categories
-
-- [TIL](#til)
-  - [Plans](#plans)
-  - [Categories](#categories)
-    - [BI](#bi)
-    - [DB](#db)
-    - [Python](#python)
-    - [Linux](#linux)
 
 ### BI
 
