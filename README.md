@@ -58,6 +58,7 @@
 
 - [制御文](./Python/loop.md)
 - [配列](./Python/array.md)
+  - [リスト内包表記](./Python/list.md)
 - [モジュール](./Python/module.md)
 - [入出力](./Python/stdinout.md)
 - [クラス](./Python/class.md)
@@ -68,3 +69,4 @@
 - [基本コマンド：ファイル](./Linux/centos02.md)
 - [基本コマンド：プロセス](./Linux/centos03.md)
 - [ファイルシステム、パーミッション](./Linux/centos04.md)
+- [シェルスクリプト](./Linux/centos05.md)
