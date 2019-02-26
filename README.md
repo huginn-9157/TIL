@@ -13,8 +13,7 @@
   - データ取得まで
 - BI
   - [公式のtips](http://navi.wingarc.com/motionboard/)で使いそうなものをやる
-  - [tableauのサンプル](https://public.tableau.com/s/resources?build=20183.18.1219.1533&edition=public&lang=ja-jp&platform=windows&version=2018.3)で遊ぶ
-  - ユーザー権限他設定等
+  - ~~[tableauのサンプル](https://public.tableau.com/s/resources?build=20183.18.1219.1533&edition=public&lang=ja-jp&platform=windows&version=2018.3)で遊ぶ~~
 - UML
   - ~~汚いので何とかしたい~~
     - なんともなりませんでした
@@ -61,10 +60,10 @@
 - [配列](./Python/array.md)
 - [モジュール](./Python/module.md)
 - [入出力](./Python/stdinout.md)
+- [クラス](./Python/class.md)
 
 ### Linux
 
 - [dockerでCentOS](./Linux/centos01.md)
 - [基本コマンド：ファイル](./Linux/centos02.md)
 - [基本コマンド：プロセス](./Linux/centos03.md)
-  
