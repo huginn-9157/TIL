@@ -14,11 +14,12 @@
 
 - DB
 - Python
-  - チュートリアル
-    - [独学プログラマー Python言語の基本から仕事のやり方まで](https://honto.jp/ebook/pd_28990263.html)
-    - [Python チュートリアル](https://docs.python.org/ja/3/tutorial/index.html)
+  - Numpyについて
     - [【Python入門】Python Numpy チュートリアル](https://avinton.com/academy/python-numpy-tutorial-japanese/)
-  - データ取得まで
+  - Web系は使う予定は無いが親しみやすいので、[Django](https://docs.djangoproject.com/ja/2.1/)を[触って](https://docs.djangoproject.com/ja/2.1/intro/tutorial01/)Pythonに慣れる
+  - スクレイピングについて
+    - Scrapy
+      - [Scrapy入門 (1)](https://qiita.com/checkpoint/items/038b59b29df8e1e384a2)
 - BI
   - [公式のtips](http://navi.wingarc.com/motionboard/)で使いそうなものをやる
     - [x] 主たる分析チャート表示
@@ -70,7 +71,9 @@
 - [モジュール](./Python/module.md)
 - [入出力](./Python/stdinout.md)
 - [クラス](./Python/class.md)
-- [標準ライブラリ](./Python/commonlib.md)
+- 標準ライブラリ
+  - [組み込み関数](./Python/commoncommand.md)
+  - [チュートリアル内のもの]((./Python/commonlib.md))
 
 ### Linux
 

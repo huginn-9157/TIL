@@ -1,8 +1,14 @@
 # 標準ライブラリ
 
+[Python 3.7.2 標準ライブラリ](https://docs.python.org/ja/3/library/index.html#library-index)
+
+インポートして使う
+
 ```py
 import ライブラリ名
 ```
+
+
 
 - os
   - OSのAPIを使う
@@ -100,3 +106,20 @@ import ライブラリ名
     エラー文が表示される
 - unittest
   - junitのように、網羅的なテストをクラス単位に別ファイルで管理する
+- 出力
+  - reprlib
+    - 長い配列等の省略表示
+  - pprint
+    - 配列を次元毎に改行して表示
+    - `pprint(配列, width=n)`
+  - textwrap
+    - 文字数指定で折り返し
+    - `fill(文字列, width=n)`
+- 文字列テンプレート
+    ```py
+    from string import Template
+    t = Template('こんにちは、$hoge。')
+    d = dict(hoge='新田氏')
+    t.substitute(d)
+    # 'こんにちは、新田氏。'
+    ```
