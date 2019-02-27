@@ -24,9 +24,9 @@
     - [x] 主たる分析チャート表示
     - [x] ボタンによるチャート連動
     - [x] チャートクリックでのドリルダウン
-    - [ ] MBでピボットテーブルライクな自由集計
+    - [x] MBでピボットテーブルライクな自由集計
     - コンテナ利用
-      - [ ] 検索条件をポップアップ表示
+      - [x] 検索条件をポップアップ表示
       - [ ] チャートのアニメーション
   - ~~[tableauのサンプル](https://public.tableau.com/s/resources?build=20183.18.1219.1533&edition=public&lang=ja-jp&platform=windows&version=2018.3)で遊ぶ~~
 - UML
@@ -70,6 +70,7 @@
 - [モジュール](./Python/module.md)
 - [入出力](./Python/stdinout.md)
 - [クラス](./Python/class.md)
+- [標準ライブラリ](./Python/commonlib.md)
 
 ### Linux
 
