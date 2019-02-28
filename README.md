@@ -74,6 +74,7 @@
 - 標準ライブラリ
   - [組み込み関数](./Python/commoncommand.md)
   - [チュートリアル内のもの]((./Python/commonlib.md))
+- [Numpy](./Python/numpy.md)
 
 ### Linux
 
