@@ -2,72 +2,90 @@
 
 - [入出力とフォーマット](#%E5%85%A5%E5%87%BA%E5%8A%9B%E3%81%A8%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88)
   - [フォーマット済み文字列リテラル](#%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E6%B8%88%E3%81%BF%E6%96%87%E5%AD%97%E5%88%97%E3%83%AA%E3%83%86%E3%83%A9%E3%83%AB)
+    - [%埋め込み](#%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF)
+    - [`f/F`String](#ffstring)
+    - [format()](#format)
   - [ファイルの読み書き](#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E8%AA%AD%E3%81%BF%E6%9B%B8%E3%81%8D)
     - [ファイルオブジェクトのメソッド](#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89)
 
 ## フォーマット済み文字列リテラル
 
-- 文字列頭に`f/F`を付ける
+### %埋め込み
 
-    ```py
-    year = 2019
-    month = 2
-    date = 22
-    f'now : {year}/{month}/{date}
-    ```
+Javaでもよく見るやつ
 
-    ```
-    'now : 2019/2/22'
-    ```
+```py
+print("%s, %d, %f" %('文字列', 12345, 3.14189))
+```
 
-    `:02d`とつけると0埋め2桁位取り
+```py
+print("%s, %s" %("hoge", "fuga"))
+# hoge,fuga
+print("%d + %d = %d" %(2, 3, (2+3)))
+# 2 + 3 = 5
+```
 
-    ```
-    >>> f'now {year}/{month:02d}/{date}'
-    'now 2019/02/22'
-    ``` 
+### `f/F`String
 
-    `:.3f`で小数点３桁位取り
+```py
+year = 2019
+month = 2
+date = 22
+f'now : {year}/{month}/{date}
+```
 
-    ```py
-    import math
-    print (f'円周率は {math.pi:.3f}')
-    ```
+```
+'now : 2019/2/22'
+```
 
-    ```
-    円周率は 3.142
-    ```
+`:02d`とつけると0埋め2桁位取り
 
-    >書式については、[書式指定文字列の文法](https://docs.python.org/ja/3/library/string.html#formatstrings)
-    を参照
+```
+>>> f'now {year}/{month:02d}/{date}'
+'now 2019/02/22'
+``` 
 
-    - format()
+`:.3f`で小数点３桁位取り
 
-    Javaのstring.format()に相当
-    ```
-    >>> 'hogehoge {}, {}'.format('foo', 'bar')
-    'hogehoge foo, bar'
-    ```
+```py
+import math
+print (f'円周率は {math.pi:.3f}')
+```
 
-    `{}`内にはキーワードを入れてもよいし、順序引数(0, 1, 2...)を入れてもよい
+```
+円周率は 3.142
+```
 
-    ```py
-    for(i in range(1, 11)):
-        print('{0:2d} {1:3d} {2:4d}.format(x, x*x, x*x*x)
-    ```
+>書式については、[書式指定文字列の文法](https://docs.python.org/ja/3/library/string.html#formatstrings)
+を参照
 
-    ```
-    1   1    1
-    2   4    8
-    3   9   27
-    4  16   64
-    5  25  125
-    6  36  216
-    7  49  343
-    8  64  512
-    9  81  729
-    10 100 1000
-    ```
+### format()
+
+Javaのstring.format()に相当
+```
+>>> 'hogehoge {}, {}'.format('foo', 'bar')
+'hogehoge foo, bar'
+```
+
+`{}`内にはキーワードを入れてもよいし、順序引数(0, 1, 2...)を入れてもよい
+
+```py
+for(i in range(1, 11)):
+    print('{0:2d} {1:3d} {2:4d}.format(x, x*x, x*x*x)
+```
+
+```
+1   1    1
+2   4    8
+3   9   27
+4  16   64
+5  25  125
+6  36  216
+7  49  343
+8  64  512
+9  81  729
+10 100 1000
+```
 
 ## ファイルの読み書き
 

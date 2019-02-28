@@ -99,6 +99,31 @@ y.add_i(4)
 - インスタンス作成
   - ただ代入するだけ
 
+### クラスの例２
+
+```py
+lass Greeter(object):
+	# コンストラクタ
+	def __init__(self, name):
+		self.name = name # インスタンス変数を作成
+	# インスタンスメソッド
+	def greet(self, loud=False):
+		if loud:
+			print('H E L L O, %s!' % self.name.upper())
+		else:
+			print('Hello, %s' % self.name)
+```
+
+呼び出し
+
+```py
+g = Greeter('Andrew')
+g.greet()
+# Hello, Andrew
+g.greet(loud=True)
+# H E L L O, ANDREW!
+```
+
 ### クラスの継承
 
 ```py
