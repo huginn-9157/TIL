@@ -1,12 +1,14 @@
 # Python の制御フロー文
 
 - [Python の制御フロー文](#python-%E3%81%AE%E5%88%B6%E5%BE%A1%E3%83%95%E3%83%AD%E3%83%BC%E6%96%87)
-  - [for()](#for)
-  - [pass](#pass)
-  - [def()](#def)
-    - [引数のデフォルト値](#%E5%BC%95%E6%95%B0%E3%81%AE%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E5%80%A4)
-    - [キーワード引数](#%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89%E5%BC%95%E6%95%B0)
-    - [辞書](#%E8%BE%9E%E6%9B%B8)
+	- [for()](#for)
+	- [pass](#pass)
+	- [def()](#def)
+		- [引数のデフォルト値](#%E5%BC%95%E6%95%B0%E3%81%AE%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E5%80%A4)
+		- [キーワード引数](#%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89%E5%BC%95%E6%95%B0)
+		- [可変長引数](#%E5%8F%AF%E5%A4%89%E9%95%B7%E5%BC%95%E6%95%B0)
+			- [*args](#args)
+			- [**kwargs](#kwargs)
 
 ## for()
 
@@ -125,11 +127,50 @@ def hoge(must_param, arg1='省略された際の', arg2='デフォルト値'):
 
 キーワード引数は、必須の引数（デフォルト値が指定されていないもの）の後に書かなければならない！
 
-### 辞書
+### 可変長引数
+
+ってなんぞ  
+[Pythonの可変長引数（_args, __kwargs）の使い方 _ note.nkmk.me](https://note.nkmk.me/python-args-kwargs-usage/)
 
 ```py
-def hoge(arg1, *name, **name)
+def hoge(*arg, **kwargs)
 ```
 
-<!-- TODO 追記 -->
-わからなかったので後回し
+- `*args`: 複数の引数をタプルとして受け取る
+- `**kwargs`: 複数のキーワード引数を辞書として受け取る
+
+この名前で使われる慣習がある
+
+#### *args
+
+`*args` に該当する位置以降がタプルとして渡され、  
+関数内で`*`を外すと展開して呼び出される
+
+```py
+def my_sum2(*args):
+	print('args: ', args)
+	print('type: ', type(args))
+	print('sum: ', sum(args))
+
+	
+my_sum2(1, 2, 3, 4)
+# args:  (1, 2, 3, 4)
+# type:  <class 'tuple'>
+# sum:  10
+```
+
+#### **kwargs
+
+要素数が不定の辞書を処理できる
+
+```py
+def get_list(**kwargs):
+	for pg_key, pg_val in kwargs.items():
+		print(pg_key, pg_val)
+
+		
+get_list(A01 = 'python', A02 = 'java', A03 = 'C#')
+# A01 python
+# A02 java
+# A03 C#
+```
