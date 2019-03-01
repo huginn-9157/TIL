@@ -64,3 +64,32 @@ list(enumerate(seasons))
 list(enumerate(seasons, start=1))
 # [(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
 ```
+
+## sorted(iterable)
+
+ソートして新たなリストとして返す。  
+対して`sort()`は元の関数を書き換える。
+
+```py
+s1 = 'cebad'
+s2 = sorted(s1)
+s2
+# ['a', 'b', 'c', 'd', 'e']
+s3 = ''.join(s2)
+s3
+# 'abcde'
+s4 = ''.join(sorted(s1, reverse=True))
+s4
+# 'edcba'
+```
+
+タプルもソートできる
+
+```py
+t1 = (3, 1, 4, 5, 2)
+t2 = sorted(t1)
+t2
+# [1, 2, 3, 4, 5]
+tuple(t2)
+# (1, 2, 3, 4, 5)
+```

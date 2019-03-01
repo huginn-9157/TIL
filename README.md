@@ -61,6 +61,7 @@
 ### DB
 
 - [PostgreSQL](./DB/postgres.md)
+- [RedShift](./DB/redshift.md)
 - DB設計
   - [販売管理](./DB/販売管理.md)
     - [マスタ設計](./DB/販売管理_マスタ.md)
