@@ -14,9 +14,11 @@
 
 - DB
 - Python
-  - Numpyについて
-    - [【Python入門】Python Numpy チュートリアル](https://avinton.com/academy/python-numpy-tutorial-japanese/)
-  - Web系は使う予定は無いが親しみやすいので、[Django](https://docs.djangoproject.com/ja/2.1/)を[触って](https://docs.djangoproject.com/ja/2.1/intro/tutorial01/)Pythonに慣れる
+  - [無料で読めるデータ分析に役立つ Python の電子書籍まとめ - Qiita](https://qiita.com/ynakayama/items/8ed2854bcc3c3633345b)
+    - [目次 - Dive Into Python 3 日本語版](http://diveintopython3-ja.rdy.jp/table-of-contents.html#your-first-python-program)
+  - [Pythonでの数値計算ライブラリNumPy徹底入門 - DeepAge](https://deepage.net/features/numpy/)
+  - ~~Web系は使う予定は無いが親しみやすいので、[Django](https://docs.djangoproject.com/ja/2.1/)を[触って](https://docs.djangoproject.com/ja/2.1/intro/tutorial01/)Pythonに慣れる~~
+    - 親しみなんて無かった
   - スクレイピングについて
     - Scrapy
       - [Scrapy入門 (1)](https://qiita.com/checkpoint/items/038b59b29df8e1e384a2)

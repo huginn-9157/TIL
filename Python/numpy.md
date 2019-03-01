@@ -52,6 +52,15 @@ shapeタプルで大きさを表す。
   - `n`埋め
 - eye(n)
   - `nxn`次元の[単位行列](https://kotobank.jp/word/%E5%8D%98%E4%BD%8D%E8%A1%8C%E5%88%97-94854)
+- arrange()
+  - 等差数列を作成する
+  - `numpy.arange([start, ]stop, [step, ]dtype = None)`
+  ```py
+  np.arange(0, 10)
+  # array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+  np.arange(0, 10, 1.5, dtype='float64')
+  # array([0. , 1.5, 3. , 4.5, 6. , 7.5, 9. ])
+  ```
 
 ### 配列のインデックス参照
 
@@ -128,3 +137,25 @@ print(a)
 #  [17,  8,  9],
 #  [10, 21, 12]]
 ```
+
+### 配列の計算
+
+- 記号で四則演算
+- add(x,y), subtract(), multiply(), divide()
+- 平方根：sqrt()
+- 積は要素ごとの積を出す
+  - 行列やベクトルの積はdot()
+- np.sum(x, [axis=n])
+  - xの要素の総和。nで列を指定しても良い
+
+```py
+x = np.array([[1,2],[3,4]])
+np.sum(x)
+# 10
+np.sum(x, axis=0)
+# array([4, 6])
+```
+
+### ブロードキャスト
+
+行列勉強してから出直し
