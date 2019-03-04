@@ -76,7 +76,8 @@
 - [クラス](./Python/class.md)
 - 標準ライブラリ
   - [組み込み関数](./Python/commoncommand.md)
-  - [チュートリアル内のもの]((./Python/commonlib.md))
+  - [チュートリアル内のもの](./Python/commonlib.md)
+- [クロージャ、高階関数](./Python/closure.md)
 - [Numpy](./Python/numpy.md)
 
 ### Linux
