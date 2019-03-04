@@ -2,6 +2,7 @@
 
 - [Python の制御フロー文](#python-%E3%81%AE%E5%88%B6%E5%BE%A1%E3%83%95%E3%83%AD%E3%83%BC%E6%96%87)
 	- [for()](#for)
+		- [enumerate](#enumerate)
 	- [pass](#pass)
 	- [def()](#def)
 		- [引数のデフォルト値](#%E5%BC%95%E6%95%B0%E3%81%AE%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E5%80%A4)
@@ -31,6 +32,19 @@ for n in range(2, 10):
 			break
 		else:
 			print(n, 'is a prime number')
+```
+
+### enumerate
+
+`enumerate()`を指定すると、配列のインデックスがとれる  
+カウンターいらず
+
+```py
+for i, n in enumerate(fib(5000)):
+	print('{0:02d}: {1:04d}'.format(i + 1, n), end=' ')
+	if (i != 0):
+		if ((i + 1) % 4 == 0):
+			print('')
 ```
 
 ## pass

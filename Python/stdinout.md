@@ -12,7 +12,7 @@
 
 ### %埋め込み
 
-Javaでもよく見るやつ
+Javaでもよく見るやつ 
 
 ```py
 print("%s, %d, %f" %('文字列', 12345, 3.14189))
@@ -31,7 +31,7 @@ print("%d + %d = %d" %(2, 3, (2+3)))
 year = 2019
 month = 2
 date = 22
-f'now : {year}/{month}/{date}
+f'now : {year}/{month}/{date}'
 ```
 
 ```
@@ -71,7 +71,7 @@ Javaのstring.format()に相当
 
 ```py
 for(i in range(1, 11)):
-    print('{0:2d} {1:3d} {2:4d}.format(x, x*x, x*x*x)
+    print('{0:2d} {1:3d} {2:4d}'.format(x, x*x, x*x*x)
 ```
 
 ```
