@@ -47,6 +47,7 @@
 
 - BI全般
   - [BIシステムのアーキテクチャ](./BI/BI.md)
+  - [販売管理の設計](./BI/products.md)
 - MotionBoard
   - [概要とインストール](./BI/MotionBoard/Install.md)
   - [guiflowで画面遷移図](./BI/MotionBoard/guiflow.md)
