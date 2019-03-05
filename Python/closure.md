@@ -5,13 +5,24 @@
 ここのコードがさっぱりわからない
 
 ```py
-
 def build_match_and_apply_functions(pattern, search, replace):
     def matches_rule(word):
         return re.search(pattern, word)
     def apply_rule(word):
         return re.sub(search, replace, word)
     return (matches_rule, apply_rule)
+
+rules = []
+with open('plural4-rules.txt', encoding='utf-8') as pattern_file:
+    for line in pattern_file:
+        pattern, search, replace = line.split(None, 3)
+        rules.append(build_match_and_apply_functions(
+                pattern, search, replace))
+
+def plural(noun):
+    for matches_rule, apply_rule in rules:
+        if matches_rule(noun):
+            return apply_rule(noun)
 ```
 
 クロージャについてあさっても、いまいちしっくりこない  
@@ -58,21 +69,24 @@ convert_hex(convert_type, 100)
 >『定義が評価された時の環境を閉じ込めて一緒に包んでしまうこと』  
 [Java - 恥ずかしながらクロージャが分かりません。｜teratail](https://teratail.com/questions/41031)
 
-関数の中で（動的に）作られる関数のことをクロージャと呼ぶ
-この定義だと高階関数と同じだが、イコールではない
+クロージャと呼ばれるものについて、大分して２つある
+- 関数の中で（動的に）作られる関数のこと
+  - ＝高階関数
+- グローバルな変数に頼らずに、関数の中に環境を閉じ込めておくこと
 
+今回詰まったのは高階関数の仕組みであった
 
-スコープ
-呼ばれたときの**環境**を保持しておく
+上の[コード](#クロージャ)で読めなかった部分
+- for文で回しているのは何なのか
+  - →rules[]に入っている関数のリスト
+    - matches_rules()とapply_rule()
+- 引数の`word`はどうやって渡されているのか
+  - plural(noun)が呼ばれたときに、for文の中で引数が定義されている
 
-オブジェクトが持つ環境
+詰まった理由として、「関数もオブジェクト」を理解していなかったことが一番
 
-|オブジェクト|環境|
-|-|-|
-|クラス|フィールド、プロパティ|
-|関数|クロージャ|
-
-執筆中
+- リストには関数も入れられ、その中の変数は呼ばれたときに初めて実態として現れる
+- 関数内の何だかわからない関数のようなものはクロージャであった
 
 ----
 
