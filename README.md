@@ -81,6 +81,7 @@
   - [チュートリアル内のもの](./Python/commonlib.md)
 - [クロージャ、高階関数](./Python/closure.md)
 - [Numpy](./Python/numpy.md)
+- [リンク集](./Python/link.md)
 
 ### Linux
 

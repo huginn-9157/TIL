@@ -3,6 +3,7 @@
 - [公式](https://docs.python.org/ja/3/index.html)
 - [無料で読めるデータ分析に役立つ Python の電子書籍まとめ - Qiita](https://qiita.com/ynakayama/items/8ed2854bcc3c3633345b)
   - [目次 - Dive Into Python 3 日本語版](http://diveintopython3-ja.rdy.jp/table-of-contents.html#your-first-python-program)
+    - 体系立てて、かつ話も面白い
 - [note.nkmk.me](https://note.nkmk.me/python/)
   - サンプルが分かりやすくて良い
 - Numpy

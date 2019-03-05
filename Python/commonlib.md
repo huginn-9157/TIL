@@ -14,7 +14,7 @@ import ライブラリ名
   - OSのAPIを使う
   - `os.getcwd()`
     - カレントDir取得
-  - `os.getcwd()`
+  - `os.chdir('directory')`
     - カレントDir変更
 - glob
   - ワイルドカードでファイル名を取ってくる
