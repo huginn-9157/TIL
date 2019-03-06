@@ -1,0 +1,33 @@
+@startuml 役割分担
+
+database DS[
+  データソース
+  --
+  データ収集
+  ETLプロセス
+  分散システム
+]
+cloud DL[
+  データレイク
+  --
+  ワークフロー管理
+  スクリプト言語
+  SQL
+]
+database DM[
+  データマート
+  --
+  BIツール
+  統計アプリ
+  機械学習
+]
+node view[
+  ビュー
+  --
+  分析結果
+]
+
+DS -ri==> DL
+DL -ri==> DM
+DM -ri==> view
+@enduml

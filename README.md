@@ -13,7 +13,11 @@
 ## Plans
 
 - DB
+  - 実践的なSQL文について
+    - SELECT句での条件分岐とか
 - Python
+  - データを扱えることを目的とする
+    - XMLとJSON、あとシリアライズについて
   - [無料で読めるデータ分析に役立つ Python の電子書籍まとめ - Qiita](https://qiita.com/ynakayama/items/8ed2854bcc3c3633345b)
     - [目次 - Dive Into Python 3 日本語版](http://diveintopython3-ja.rdy.jp/table-of-contents.html#your-first-python-program)
   - [Pythonでの数値計算ライブラリNumPy徹底入門 - DeepAge](https://deepage.net/features/numpy/)
@@ -80,6 +84,7 @@
   - [組み込み関数](./Python/commoncommand.md)
   - [チュートリアル内のもの](./Python/commonlib.md)
 - [クロージャ、高階関数](./Python/closure.md)
+- [DB接続](./Python/connectDB.md)
 - [Numpy](./Python/numpy.md)
 - [リンク集](./Python/link.md)
 
