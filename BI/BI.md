@@ -3,7 +3,7 @@
 - [BIアーキテクチャ](#bi%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3)
   - [使うもの](#%E4%BD%BF%E3%81%86%E3%82%82%E3%81%AE)
   - [概念](#%E6%A6%82%E5%BF%B5)
-    - [Data Staging Area (DSA, ETL)](#data-staging-area-dsa-etl)
+    - [ETL処理](#etl%E5%87%A6%E7%90%86)
     - [Operational Data Source (ODS)](#operational-data-source-ods)
     - [データウェアハウス (DWH)](#%E3%83%87%E3%83%BC%E3%82%BF%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%8F%E3%82%A6%E3%82%B9-dwh)
     - [データマート (DM)](#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%9E%E3%83%BC%E3%83%88-dm)
@@ -37,10 +37,21 @@
 
 ## 概念
 
-### Data Staging Area (DSA, ETL)
+### ETL処理
 
-ステージング処理を行う。
-`ETL` (Extract, Transform, Load) 処理とも言う。
+>ETL = Extract, Transform, Load
+
+以前までは変換・加工 → ロード の順番が鉄則だったが、  
+最近では
+
+>ELT = Extract, Load, Transform
+
+の順番で行う場合もある（クラウドベースでは）
+
+参考：  
+[ETL処理とELT処理の違い ～ビッグデータ処理の新トレンド～ _ GiXo Ltd.](https://www.gixo.jp/blog/10330/)
+
+ステージング処理を行う領域をData Staging Area (DSA)とも呼ぶ
 
 この処理はBIシステム構築の中でも肝である。（最も工数がかかる）
 
@@ -272,6 +283,8 @@ MPPの特徴として
 - 行指向DBを高速化するのに必須な**インデックス**が、集計用途ではあまり意味を成さない
 - 集計に必要な列だけ取り出すので、IOが減る
 - 同列にある似たようなデータを圧縮するので、DBサイズも減る場合がある
+
+分散処理については[別記](./spark.md)
 
 ----
 

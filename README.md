@@ -18,8 +18,8 @@
 - Python
   - データを扱えることを目的とする
     - XMLとJSON、あとシリアライズについて
-  - [無料で読めるデータ分析に役立つ Python の電子書籍まとめ - Qiita](https://qiita.com/ynakayama/items/8ed2854bcc3c3633345b)
-    - [目次 - Dive Into Python 3 日本語版](http://diveintopython3-ja.rdy.jp/table-of-contents.html#your-first-python-program)
+  <!-- - [無料で読めるデータ分析に役立つ Python の電子書籍まとめ - Qiita](https://qiita.com/ynakayama/items/8ed2854bcc3c3633345b) -->
+  - [目次 - Dive Into Python 3 日本語版](http://diveintopython3-ja.rdy.jp/table-of-contents.html#your-first-python-program)
   - [Pythonでの数値計算ライブラリNumPy徹底入門 - DeepAge](https://deepage.net/features/numpy/)
   - ~~Web系は使う予定は無いが親しみやすいので、[Django](https://docs.djangoproject.com/ja/2.1/)を[触って](https://docs.djangoproject.com/ja/2.1/intro/tutorial01/)Pythonに慣れる~~
     - 親しみなんて無かった
@@ -27,23 +27,30 @@
     - Scrapy
       - [Scrapy入門 (1)](https://qiita.com/checkpoint/items/038b59b29df8e1e384a2)
 - BI
-  - [公式のtips](http://navi.wingarc.com/motionboard/)で使いそうなものをやる
-    - [x] 主たる分析チャート表示
+  - 『ビッグデータを支える技術』 技術評論社
+    - Sparkを例にした分散処理がメイン
+    - 1 ~ 2 章の前提知識は大変ためになった
+    - 分散処理もETL処理に関わるかもしれないので、最後までやる
+  - [x] [公式のtips](http://navi.wingarc.com/motionboard/)で使いそうなものをやる
+    <!-- - [x] 主たる分析チャート表示
     - [x] ボタンによるチャート連動
     - [x] チャートクリックでのドリルダウン
     - [x] MBでピボットテーブルライクな自由集計
     - コンテナ利用
       - [x] 検索条件をポップアップ表示
-      - [ ] チャートのアニメーション
+      - [ ] チャートのアニメーション -->
   - ~~[tableauのサンプル](https://public.tableau.com/s/resources?build=20183.18.1219.1533&edition=public&lang=ja-jp&platform=windows&version=2018.3)で遊ぶ~~
 - UML
-  - ~~汚いので何とかしたい~~
+  <!-- - ~~汚いので何とかしたい~~
     - なんともなりませんでした
     - 方向指示語でコントロール可能な大きさになるよう、機能ごとに分割するしかない
-  - [打倒！PlantUMLのなにこれレイアウト – VELTRA Engineering – Medium](https://medium.com/veltra-engineering/how-difficult-it-is-to-adjust-the-layout-using-plantuml-997884410db5)
+  - [打倒！PlantUMLのなにこれレイアウト – VELTRA Engineering – Medium](https://medium.com/veltra-engineering/how-difficult-it-is-to-adjust-the-layout-using-plantuml-997884410db5) -->
 - Linux
   - LPICに向けて
     - とりあえず、[LinuCイージス](https://www.infraeye.com/study/studyz4.html)でざっと確認
+  - Windows上でDockerコンテナ(CentOS)を走らせるよりは、  
+    WSL上でUbuntu動かした方が圧倒的に早くて軽い。  
+    今後はそちらでやる
 
 ## Categories
 
@@ -52,6 +59,8 @@
 - BI全般
   - [BIシステムのアーキテクチャ](./BI/BI.md)
     - [BIツール以外の選択肢](./BI/option.md)
+    <!-- - [分散処理](./BI/spark.md) -->
+    - 分散処理
   - [販売管理の設計](./BI/products.md)
   - [会計BIの基礎](./BI/accounting.md)
 - MotionBoard
@@ -86,6 +95,7 @@
   - [チュートリアル内のもの](./Python/commonlib.md)
 - [クロージャ、高階関数](./Python/closure.md)
 - [DB接続](./Python/connectDB.md)
+- [シリアライズ、JSON](./Python/json.md)
 - [Numpy](./Python/numpy.md)
 - [リンク集](./Python/link.md)
 
@@ -97,3 +107,4 @@
 - [ファイルシステム、パーミッション](./Linux/centos04.md)
 - [シェルスクリプト](./Linux/centos05.md)
 - ユーザー管理
+<!-- - [ユーザー管理](./Linux/centos06.md) -->
