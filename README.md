@@ -56,8 +56,9 @@
 - BI全般
   - [BIシステムのアーキテクチャ](./BI/BI.md)
     - [BIツール以外の選択肢](./BI/option.md)
-    <!-- - [分散処理](./BI/spark.md) -->
-    - 分散処理
+    - [分散処理](./BI/spark.md)
+    - データマート
+    <!-- - [データマート](./BI/dm.md) -->
   - [販売管理の設計](./BI/products.md)
   - [会計BIの基礎](./BI/accounting.md)
 - MotionBoard

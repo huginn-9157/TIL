@@ -32,3 +32,10 @@ hadoop
     - 鍵は正しいパーミッションで無いと弾かれる
       - `chmod 600`
       - ホスト秘密鍵が無ければ、`ssh-keygen -A`で作成
+- docker (CentOS) からHiveの起動手順
+  ```
+  # /usr/sbin/sshd
+  # ssh -i ~/.ssh/id_rsa root@localhost
+  # start-dfs.sh
+  # hive
+  ```
