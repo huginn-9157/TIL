@@ -18,6 +18,9 @@
 - Python
   - ~~データを扱えることを目的とする~~
     - 具体的な目標を設定する
+      - SIGNATEに[練習問題](https://signate.jp/competitions/practice)があった。
+        - 現時点ではあまり業務に関わりそうにない上、前提知識も足りてない
+        - が楽しそうなので一つはやる
       - jupyterで分析ノート
       - djangoのTODO管理サンプルがあったので読む
   - スクレイピングについて
@@ -96,6 +99,7 @@
 - [Numpy](./Python/numpy.md)
 - Jupyterノート
   - [pandasで前処理（モデリング前）](./Python/pandas_sample.ipynb)
+  - [SIGNATE 練習問題 - 自動車の走行距離予測](./Python/Signate_practice1.ipynb)
 - [リンク集](./Python/link.md)
 
 ### Linux
