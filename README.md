@@ -98,8 +98,12 @@
 - [シリアライズ、JSON](./Python/json.md)
 - [Numpy](./Python/numpy.md)
 - Jupyterノート
-  - [pandasで前処理（モデリング前）](./Python/pandas_sample.ipynb)
-  - [SIGNATE 練習問題 - 自動車の走行距離予測](./Python/Signate_practice1.ipynb)
+  - pandasで前処理（モデリング前）
+    - [Githubで表示](./Python/pandas_sample.ipynb)
+    - [Colaboratoryで表示](https://colab.research.google.com/github/huginn-9157/TIL/blob/master/Python/pandas_sample.ipynb)
+  - SIGNATE 練習問題 - 自動車の走行距離予測
+    - [Githubで表示](./Python/Signate_practice1.ipynb)
+    - [Colaboratoryで表示](https://colab.research.google.com/github/huginn-9157/TIL/blob/master/Python/Signate_practice1.ipynb)
 - [リンク集](./Python/link.md)
 
 ### Linux
