@@ -57,8 +57,7 @@
   - [BIシステムのアーキテクチャ](./BI/BI.md)
     - [BIツール以外の選択肢](./BI/option.md)
     - [分散処理](./BI/spark.md)
-    - データマート
-    <!-- - [データマート](./BI/dm.md) -->
+    - [データマート](./BI/dm.md)
   - [販売管理の設計](./BI/products.md)
   - [会計BIの基礎](./BI/accounting.md)
 - MotionBoard
@@ -96,7 +95,7 @@
 - [シリアライズ、JSON](./Python/json.md)
 - [Numpy](./Python/numpy.md)
 - Jupyterノート
-  - [pandas 学習](./Python/pandas_sample.ipynb)
+  - [pandasで前処理（モデリング前）](./Python/pandas_sample.ipynb)
 - [リンク集](./Python/link.md)
 
 ### Linux
