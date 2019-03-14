@@ -7,7 +7,7 @@
   - [Categories](#categories)
     - [BI](#bi)
     - [DB](#db)
-    - [Python](#python)
+    - [Python/](#python)
     - [Linux](#linux)
 
 ## Plans
@@ -61,6 +61,8 @@
     - [BIツール以外の選択肢](./BI/option.md)
     - [分散処理](./BI/spark.md)
     - [データマート](./BI/dm.md)
+    - [NoSQL](./BI/nosql.md)
+    - [ワークフロー管理](./BI/workflow.md)
   - [販売管理の設計](./BI/products.md)
   - [会計BIの基礎](./BI/accounting.md)
 - MotionBoard
@@ -82,7 +84,7 @@
   - [販売管理](./DB/販売管理.md)
     - [マスタ設計](./DB/販売管理_マスタ.md)
 
-### Python
+### Python/
 
 - [制御文](./Python/loop.md)
 - [配列](./Python/array.md)
