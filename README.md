@@ -75,6 +75,9 @@
   - [概要とインストール](./BI/Dr.Sum/Install.md)
   - [Dr.Sumで業務分析](./BI/Dr.Sum/Analysis.md)
   - [忘備録](./BI/Dr.Sum/tips.md)
+- Tableau
+- re:dash
+  - [ハンズオン](./BI/redash/handson.md)
 
 ### DB
 
@@ -104,8 +107,11 @@
     - [Githubで表示](./Python/pandas_sample.ipynb)
     - [Colaboratoryで表示](https://colab.research.google.com/github/huginn-9157/TIL/blob/master/Python/pandas_sample.ipynb)
   - SIGNATE 練習問題 - 自動車の走行距離予測
-    - [Githubで表示](./Python/Signate_practice1.ipynb)
-    - [Colaboratoryで表示](https://colab.research.google.com/github/huginn-9157/TIL/blob/master/Python/Signate_practice1.ipynb)
+    - [Github](./Python/Signate_practice1.ipynb)
+    - [Colaboratory](https://colab.research.google.com/github/huginn-9157/TIL/blob/master/Python/Signate_practice1.ipynb)
+  - 走行距離予測 答えのコピペ
+    - [Github](./Python/Signate_practice1a.ipynb)
+    - [Colaboratory](https://colab.research.google.com/github/huginn-9157/TIL/blob/master/Python/Signate_practice1a.ipynb)
 - [リンク集](./Python/link.md)
 
 ### Linux
