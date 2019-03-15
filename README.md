@@ -7,7 +7,7 @@
   - [Categories](#categories)
     - [BI](#bi)
     - [DB](#db)
-    - [Python/](#python)
+    - [Python](#python)
     - [Linux](#linux)
 
 ## Plans
@@ -16,35 +16,12 @@
   - 実践的なSQL文について
     - SELECT句での条件分岐とか
 - Python
-  - ~~データを扱えることを目的とする~~
-    - 具体的な目標を設定する
-      - SIGNATEに[練習問題](https://signate.jp/competitions/practice)があった。
-        - 現時点ではあまり業務に関わりそうにない上、前提知識も足りてない
-        - が楽しそうなので一つはやる
-      - jupyterで分析ノート
-      - djangoのTODO管理サンプルがあったので読む
+  - SIGNATE[練習問題](https://signate.jp/competitions/practice)で分析結果を出せるようにする。
+  - djangoのTODO管理サンプルがあったので読む
   - スクレイピングについて
-    - Scrapy
-      - [Scrapy入門 (1)](https://qiita.com/checkpoint/items/038b59b29df8e1e384a2)
+    - [Scrapy入門 (1)](https://qiita.com/checkpoint/items/038b59b29df8e1e384a2)
 - BI
-  - 『ビッグデータを支える技術』 技術評論社
-    - Sparkを例にした分散処理がメイン
-    - 1 ~ 2 章の前提知識は大変ためになった
-    - 分散処理もETL処理に関わるかもしれないので、最後までやる
-  - [x] [公式のtips](http://navi.wingarc.com/motionboard/)で使いそうなものをやる
-    <!-- - [x] 主たる分析チャート表示
-    - [x] ボタンによるチャート連動
-    - [x] チャートクリックでのドリルダウン
-    - [x] MBでピボットテーブルライクな自由集計
-    - コンテナ利用
-      - [x] 検索条件をポップアップ表示
-      - [ ] チャートのアニメーション -->
   - ~~[tableauのサンプル](https://public.tableau.com/s/resources?build=20183.18.1219.1533&edition=public&lang=ja-jp&platform=windows&version=2018.3)で遊ぶ~~
-- UML
-  <!-- - ~~汚いので何とかしたい~~
-    - なんともなりませんでした
-    - 方向指示語でコントロール可能な大きさになるよう、機能ごとに分割するしかない
-  - [打倒！PlantUMLのなにこれレイアウト – VELTRA Engineering – Medium](https://medium.com/veltra-engineering/how-difficult-it-is-to-adjust-the-layout-using-plantuml-997884410db5) -->
 - Linux
   - LPICに向けて
     - とりあえず、[LinuCイージス](https://www.infraeye.com/study/studyz4.html)でざっと確認
@@ -87,7 +64,7 @@
   - [販売管理](./DB/販売管理.md)
     - [マスタ設計](./DB/販売管理_マスタ.md)
 
-### Python/
+### Python
 
 - [制御文](./Python/loop.md)
 - [配列](./Python/array.md)
@@ -123,3 +100,7 @@
 - [シェルスクリプト](./Linux/centos05.md)
 - ユーザー管理
 <!-- - [ユーザー管理](./Linux/centos06.md) -->
+
+----
+
+- [読書リスト](./Books/list.md)
