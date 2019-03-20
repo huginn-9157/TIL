@@ -21,7 +21,10 @@
   - スクレイピングについて
     - [Scrapy入門 (1)](https://qiita.com/checkpoint/items/038b59b29df8e1e384a2)
 - BI
-  - ~~[tableauのサンプル](https://public.tableau.com/s/resources?build=20183.18.1219.1533&edition=public&lang=ja-jp&platform=windows&version=2018.3)で遊ぶ~~
+  - Tableau
+    - 何故か２シリーズあるチュートリアル
+      - [ラーニング](https://www.tableau.com/ja-jp/learn/training?edition=unlicensed&lang=ja-jp&platform=windows&version=2019.1.0&reg-delay=true)（カテゴリ別）
+      - [ビジュアライゼーション作成](https://www.tableau.com/ja-jp/learn/starter-kits)（ストーリー仕立て）
 - Linux
   - LPICに向けて
     - とりあえず、[LinuCイージス](https://www.infraeye.com/study/studyz4.html)でざっと確認
@@ -53,6 +56,7 @@
   - [Dr.Sumで業務分析](./BI/Dr.Sum/Analysis.md)
   - [忘備録](./BI/Dr.Sum/tips.md)
 - Tableau
+  - [忘備録](./BI/Tableau/tips.md)
 - re:dash
   - [ハンズオン](./BI/redash/handson.md)
 
