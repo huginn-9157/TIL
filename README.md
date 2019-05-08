@@ -62,6 +62,7 @@
 
 ### DB
 
+- [SQL構文](/DB/tatujin.md)
 - [PostgreSQL](./DB/postgres.md)
 - [RedShift](./DB/redshift.md)
 - DB設計
