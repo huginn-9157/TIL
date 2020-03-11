@@ -31,6 +31,8 @@
   - Windows上でDockerコンテナ(CentOS)を走らせるよりは、  
     WSL上でUbuntu動かした方が圧倒的に早くて軽い。  
     今後はそちらでやる
+- AWS
+  - [AWS Online Conference 3/10～](./AWS/aws_oc.md)
 
 ## Categories
 
